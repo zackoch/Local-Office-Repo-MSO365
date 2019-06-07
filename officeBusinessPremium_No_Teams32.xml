@@ -1,0 +1,21 @@
+<Configuration>
+  <Info Description="Business Premium 32bit, No teams." />
+  <Add OfficeClientEdition="32" Channel="Insiders" SourcePath="\\SERVERNAME\LocalOfficeRepo\BusinessPremium32" AllowCdnFallback="TRUE" ForceUpgrade="TRUE">
+    <Product ID="O365BusinessRetail">
+      <Language ID="en-us" />
+      <ExcludeApp ID="Groove" />
+      <ExcludeApp ID="Teams" />
+    </Product>
+  </Add>
+  <Property Name="SharedComputerLicensing" Value="0" />
+  <Property Name="PinIconsToTaskbar" Value="FALSE" />
+  <Property Name="SCLCacheOverride" Value="0" />
+  <Property Name="AUTOACTIVATE" Value="FALSE" />
+  <Updates Enabled="TRUE" />
+  <RemoveMSI />
+  <AppSettings>
+    <Setup Name="Company" Value="COMPANY NAME" />
+  </AppSettings>
+  <Display Level="Full" AcceptEULA="TRUE" />
+  <Logging Level="Standard" Path="\\SERVERNAME\LocalOfficeRepo\BusinessPremium32\clientInstallLogs" />
+</Configuration>

@@ -1,0 +1,24 @@
+<Configuration>
+  <Info Description="ProPlus 32Bit - No teams." />
+  <Add OfficeClientEdition="32" Channel="Insiders" SourcePath="\\SERVERNAME\LocalOfficeRepo\ProPlus32" AllowCdnFallback="TRUE" ForceUpgrade="TRUE">
+    <Product ID="O365ProPlusRetail">
+      <Language ID="en-us" />
+      <ExcludeApp ID="Groove" />
+      <ExcludeApp ID="Teams" />
+    </Product>
+  </Add>
+  <Property Name="SharedComputerLicensing" Value="0" />
+  <Property Name="PinIconsToTaskbar" Value="TRUE" />
+  <Property Name="SCLCacheOverride" Value="0" />
+  <Property Name="AUTOACTIVATE" Value="FALSE" />
+  <Updates Enabled="TRUE" />
+  <RemoveMSI>
+    <IgnoreProduct ID="VisPro" />
+    <IgnoreProduct ID="VisStd" />
+  </RemoveMSI>
+  <AppSettings>
+    <Setup Name="Company" Value="COMPANY NAME" />
+  </AppSettings>
+  <Display Level="Full" AcceptEULA="TRUE" />
+  <Logging Level="Standard" Path="\\SERVERNAME\LocalOfficeRepo\ProPlus32\clientInstallLogs" />
+</Configuration>
